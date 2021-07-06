@@ -7,6 +7,7 @@ public class TVShelfAdapter implements Inches {
         this.tvShelf = tvShelf;
     }
 
+
     public double getWidthInCm() {
         return tvShelf.getWidthInCm ();
     }
@@ -17,7 +18,7 @@ public class TVShelfAdapter implements Inches {
 
     public double getDiagonalInCm (){
         if (tvShelf.getWidthInCm () < tvShelf.getHeightInCm ()){
-            System.out.print ("Полка должна располагаться вертикально: ");
+            System.out.print ("Полка должна располагаться горизонтально: ");
             return 0;
         } else return Math.sqrt ((Math.pow(tvShelf.getWidthInCm (), 2)) + (Math.pow(tvShelf.getHeightInCm (), 2)));
     }
